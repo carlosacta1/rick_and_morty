@@ -1,0 +1,56 @@
+.card {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  display: inline-block;
+  scale: 90%;
+  padding: 5px 5px 5px;
+  background: white;
+  margin: 1px;
+  border: 2px solid #000;
+  border-radius: 20px;
+}
+  
+.card:hover {  
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.closebtn {
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  position: absolute;
+  margin: 10px;
+  right: 0px;
+}
+.closebtn:hover {
+  border: 2px solid transparent;
+  color: indigo;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+img {
+  border-radius: 20px;
+}
+
+.name {
+  position: absolute;
+  top: 240px;
+  left: 20px;
+  color: white; 
+  font: bold 20px/15px Helvetica, Sans-Serif; 
+  letter-spacing: -1px;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.description {
+  margin: 10px;
+  letter-spacing: -1px;
+  display: subgrid;
+  border: 2px solid #000;
+  padding: 10px;
+}
