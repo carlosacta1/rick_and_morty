@@ -1,17 +1,19 @@
 import React from 'react';
-import styles from './Card.module.css'
+import card from './Card.module.css'
 
 
 export default function Card(props) {
    return (
-      <div className= {styles.card}>
-         <button className= {styles.closebtn} onClick={props.onClose}>X</button>
-         <h2 className= {styles.name}>{props.name}</h2>
-         <img  src={props.image} alt="" />
-         <h2>
-            <span className= {styles.description}>{props.species}</span>
-            <span className= {styles.description}>{props.gender}</span>
-         </h2>
+      <div className= {card.card}>
+         <div>
+            <button className={card.closebtn} onClick={() => props.onClose(props.id)}>X</button>
+            <img  src={props.image} alt="Could not load image" />
+            <h2 className={card.name}>{props.name}</h2>
+         </div>
+         <div>
+            <h2 className={card.description}>{props.species}</h2>
+            <h2 className={card.description}>{props.gender}</h2>
+         </div>
       </div>
    );
  }

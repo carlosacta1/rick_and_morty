@@ -1,5 +1,11 @@
 .App {
+  background-color: black;
   text-align: center;
-  background-image: url(http://www.nasa.gov/sites/default/files/thumbnails/image/stsci-h-p2016a-m-2000x1374.png);
-  background-color: #cccccc;
+  min-height: 100%;
+  background: url(http://www.nasa.gov/sites/default/files/thumbnails/image/stsci-h-p2016a-m-2000x1374.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 25px;
 }
